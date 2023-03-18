@@ -18,4 +18,9 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MyPortfolio.Business\MyPortfolio.Business.csproj" />
+    <ProjectReference Include="..\MyPortfolio.DataAccess\MyPortfolio.DataAccess.csproj" />
+  </ItemGroup>
+
 </Project>

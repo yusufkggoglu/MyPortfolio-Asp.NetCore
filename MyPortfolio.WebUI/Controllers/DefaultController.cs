@@ -17,5 +17,10 @@ namespace MyPortfolio.WebUI.Controllers
         {
             return PartialView();
         }
+
+        public PartialViewResult NavbarPartial()
+        {
+            return PartialView();
+        }
     }
 }

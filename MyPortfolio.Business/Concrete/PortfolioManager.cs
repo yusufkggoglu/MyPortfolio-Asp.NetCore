@@ -1,4 +1,5 @@
-﻿using MyPortfolio.DataAccess.Abstract;
+﻿using MyPortfolio.Business.Abstract;
+using MyPortfolio.DataAccess.Abstract;
 using MyPortfolio.Entities.Concrete;
 using System;
 using System.Collections.Generic;
@@ -12,7 +13,7 @@ namespace MyPortfolio.Business.Concrete
     {
         IPortfolioDal _portfolioDal;
 
-        public PortfolioManager(IPortfoliotDal portfolioDal)
+        public PortfolioManager(IPortfolioDal portfolioDal)
         {
             _portfolioDal = portfolioDal;
         }

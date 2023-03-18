@@ -1,0 +1,27 @@
+﻿@using MyPortfolio.Entities.Concrete
+@model List<Feature> 
+
+<header class="header">
+    <div class="container">
+        <ul class="social-icons pt-3">
+            <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-facebook" aria-hidden="true"></i></a></li>
+            <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-twitter" aria-hidden="true"></i></a></li>
+            <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-google" aria-hidden="true"></i></a></li>
+            <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-instagram" aria-hidden="true"></i></a></li>
+            <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-github" aria-hidden="true"></i></a></li>
+        </ul>
+        <div class="header-content">
+            @foreach (var item in Model)
+            {
+                <h4 class="header-subtitle">@item.Header</h4>
+                <h6 class="header-title">@item.Name</h6>
+                <h6 class="header-mono">@item.Title</h6>
+            }
+        <a href="#contact">
+
+            <button class="btn btn-primary btn-rounded"><i class="ti-printer pr-2"> </i>Bana Ulaşın .</button>
+        </a>
+            
+        </div>
+    </div>
+</header>

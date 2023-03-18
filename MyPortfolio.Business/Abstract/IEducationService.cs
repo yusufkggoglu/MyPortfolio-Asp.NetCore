@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MyPortfolio.Business.Abstract
 {
-    public class IEducationService : IGenericService<Education>
+    public interface IEducationService : IGenericService<Education>
     {
     }
 }
