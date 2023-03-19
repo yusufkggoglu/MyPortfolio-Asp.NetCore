@@ -1,0 +1,11 @@
+﻿@using MyPortfolio.Entities.Concrete
+@model List<Education>
+
+
+@foreach (var item in Model)
+{
+    <h6 class="title text-danger">@item.School</h6>
+    <P>@item.Department</P>
+    <P class="subtitle">@item.Description</P>
+    <hr />
+}
