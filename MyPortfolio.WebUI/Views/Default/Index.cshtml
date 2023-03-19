@@ -14,31 +14,7 @@
     @await Html.PartialAsync("NavbarPartial")
     <div class="container-fluid">
         <div id="about" class="row about-section">
-            <div class="col-lg-4 about-card">
-                <h3 class="font-weight-light">Who am I ?</h3>
-                <span class="line mb-5"></span>
-                <h5 class="mb-3">A Web Designer / Developer Located In Our Lovely Earth</h5>
-                <p class="mt-20">Lorem ipsum dolor sit amet, consectetur adipisicing elit.sit amet, Qui deserunt consequatur fugit repellendusillo voluptas?</p>
-                <button class="btn btn-outline-danger"><i class="icon-down-circled2 "></i>Download My CV</button>
-            </div>
-            <div class="col-lg-4 about-card">
-                <h3 class="font-weight-light">Personal Info</h3>
-                <span class="line mb-5"></span>
-                <ul class="mt40 info list-unstyled">
-                    <li><span>Birthdate</span> : 09/13/1996</li>
-                    <li><span>Email</span> : info@website.com</li>
-                    <li><span>Phone</span> : + (123) 456-7890</li>
-                    <li><span>Skype</span> : John_Doe </li>
-                    <li><span>Address</span> :  12345 Fake ST NoWhere AB Country.</li>
-                </ul>
-                <ul class="social-icons pt-3">
-                    <li class="social-item"><a class="social-link" href="#"><i class="ti-facebook" aria-hidden="true"></i></a></li>
-                    <li class="social-item"><a class="social-link" href="#"><i class="ti-twitter" aria-hidden="true"></i></a></li>
-                    <li class="social-item"><a class="social-link" href="#"><i class="ti-google" aria-hidden="true"></i></a></li>
-                    <li class="social-item"><a class="social-link" href="#"><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                    <li class="social-item"><a class="social-link" href="#"><i class="ti-github" aria-hidden="true"></i></a></li>
-                </ul>
-            </div>
+            @await Component.InvokeAsync("AboutList")
             <div class="col-lg-4 about-card">
                 <h3 class="font-weight-light">My Expertise</h3>
                 <span class="line mb-5"></span>
@@ -84,17 +60,7 @@
                             </div>
                         </div>
                         <div class="card-body">
-                            <h6 class="title text-danger">2017 - Present</h6>
-                            <P>UX Developer</P>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.</P>
-                            <hr>
-                            <h6 class="title text-danger">2016 - 2017</h6>
-                            <P>Front-end Developer</P>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.</P>
-                            <hr>
-                            <h6 class="title text-danger">2015 - 2016</h6>
-                            <P>UX Designer</P>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.</P>
+                            @await Component.InvokeAsync("EducationList")
                         </div>
                     </div>
                 </div>
@@ -102,23 +68,12 @@
                     <div class="card">
                         <div class="card-header">
                             <div class="mt-2">
-                                <h4>Education</h4>
+                                <h4>Sertifika</h4>
                                 <span class="line"></span>
                             </div>
                         </div>
                         <div class="card-body">
-                            <h6 class="title text-danger">2017 - Present</h6>
-                            <P>B.E Computer Engineering</P>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error corrupti recusandae obcaecati odit repellat ducimus cum, minus tempora aperiam at.</P>
-                            <hr>
-                            <h6 class="title text-danger">2016 - 2017</h6>
-                            <P>Diploma in Computer Engineering</P>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, id officiis quas placeat quia voluptas dolorum rem animi nostrum quae.aliquid repudiandae saepe!.</P>
-                            <hr>
-                            <h6 class="title text-danger">2015 - 2016</h6>
-                            <P>High School Degree</P>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.</P>
-
+                            @await Component.InvokeAsync("CertificateList")
                         </div>
                     </div>
                 </div>

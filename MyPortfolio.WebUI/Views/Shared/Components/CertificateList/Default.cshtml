@@ -1,0 +1,11 @@
+﻿@using MyPortfolio.Entities.Concrete
+@model List<Certificate>
+
+
+@foreach (var item in Model)
+{
+    <h6 class="title text-danger">@item.Title</h6>
+    <P>>@item.Brand</P>
+    <P class="subtitle">@item.Description</P>
+    <hr>
+}
