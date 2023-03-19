@@ -1,4 +1,5 @@
-﻿using MyPortfolio.Entities.Concrete;
+﻿using MyPortfolio.DataAccess.Abstract;
+using MyPortfolio.Entities.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace MyPortfolio.DataAccess.Concrete.EntityFramework
 {
-    public class EfAboutDal : EfEntityRepositoryBase<About , MyPortfolioContext>
+    public class EfAboutDal : EfEntityRepositoryBase<About , MyPortfolioContext> , IAboutDal
     {
     }
 }
