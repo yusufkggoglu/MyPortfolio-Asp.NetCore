@@ -1,0 +1,10 @@
+﻿@using MyPortfolio.Entities.Concrete
+@model List<Skill>
+
+@foreach (var item in Model)
+{
+    <h6>@item.Title</h6>
+    <div class="progress mb-3">
+        <div class="progress-bar bg-danger" role="progressbar" style="width: @item.MyProperty%" aria-valuenow="@item.MyProperty" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+}
