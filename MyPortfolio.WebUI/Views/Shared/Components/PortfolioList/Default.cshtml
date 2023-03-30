@@ -1,0 +1,28 @@
+﻿@using MyPortfolio.Entities.Concrete
+@model List<Portfolio>
+
+
+    <section class="section bg-custom-gray" id="portfolio">
+        <div class="container">
+            <h1 class="mb-5"><span class="text-danger">Port</span>folio</h1>
+            <div class="portfolio">
+                <div class="portfolio-container">
+                    @foreach (var item in Model)
+                    {
+                        <div class="col-md-6 col-lg-4 web new">
+                            <div class="portfolio-item">
+                                <img src="~/@item.ImageUrl" class="img-fluid" alt="@item.Title">
+                                <div class="content-holder">
+                                    <a class="img-popup" href="~/@item.ImageUrl"></a>
+                                    <div class="text-holder">
+                                        <h6 class="title">@item.Title</h6>
+                                        <p class="subtitle">@item.Description</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </section>

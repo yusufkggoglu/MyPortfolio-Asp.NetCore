@@ -1,0 +1,26 @@
+﻿@using MyPortfolio.Entities.Concrete
+@model List<Blog>
+    <section class="section" id="blog">
+        <div class="container">
+            <h2 class="mb-5">Son <span class="text-danger">Bloglarım</span></h2>
+            <div class="row">
+                @foreach (var item in Model)
+                {
+                <div class="blog-card">
+                    <div class="img-holder">
+                        <img src="~/@item.ImageUrl" alt="@item.Title">
+                    </div>
+                    <div class="content-holder">
+                        <h6 class="title">@item.Title</h6>
+
+                        <p class="post-details">
+                            <a href="">By: Admin</a>
+                        </p>
+                        <p>@item.Text</p>
+                    </div>
+                </div><!-- end of blog wrapper -->
+                }
+                <!-- blog-card -->
+            </div>
+        </div>
+    </section>

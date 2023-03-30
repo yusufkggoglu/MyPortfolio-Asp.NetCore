@@ -1,0 +1,29 @@
+﻿@using MyPortfolio.Entities.Concrete
+@model List<About>
+@foreach (var item in Model)
+{
+    <div class="row mb-2">
+        <div class="col-1 pt-1 mr-1">
+            <i class="ti-mobile icon-md"></i>
+        </div>
+        <div class="col-10 ">
+            <h6 class="d-inline">Telefon :<br> <span class="text-muted">+9 @item.Phone.</span></h6>
+        </div>
+    </div>
+    <div class="row mb-2">
+        <div class="col-1 pt-1 mr-1">
+            <i class="ti-map-alt icon-md"></i>
+        </div>
+        <div class="col-10">
+            <h6 class="d-inline">Address :<br> <span class="text-muted">@item.Address</span></h6>
+        </div>
+    </div>
+    <div class="row mb-2">
+        <div class="col-1 pt-1 mr-1">
+            <i class="ti-envelope icon-md"></i>
+        </div>
+        <div class="col-10">
+            <h6 class="d-inline">Email :<br> <span class="text-muted">@item.Email</span></h6>
+        </div>
+    </div>
+}

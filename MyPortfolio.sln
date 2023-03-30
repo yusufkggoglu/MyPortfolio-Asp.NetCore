@@ -3,15 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.33423.256
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyPortfolio.WebUI", "MyPortfolio.WebUI\MyPortfolio.WebUI.csproj", "{E97E6793-3293-4774-BAEE-2C9D645FDDC0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyPortfolio.WebUI", "MyPortfolio.WebUI\MyPortfolio.WebUI.csproj", "{E97E6793-3293-4774-BAEE-2C9D645FDDC0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{83B7E348-F822-4806-A615-0D4962C38E86} = {83B7E348-F822-4806-A615-0D4962C38E86}
+		{7BB54559-8C80-4CE7-9ACA-F8AE33B076B1} = {7BB54559-8C80-4CE7-9ACA-F8AE33B076B1}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyPortfolio.Business", "MyPortfolio.Business\MyPortfolio.Business.csproj", "{1A2125C4-92B8-4E0A-89E2-4630BF449012}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyPortfolio.Business", "MyPortfolio.Business\MyPortfolio.Business.csproj", "{1A2125C4-92B8-4E0A-89E2-4630BF449012}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyPortfolio.DataAccess", "MyPortfolio.DataAccess\MyPortfolio.DataAccess.csproj", "{1B786EC6-CC5A-40E0-B739-5D122726A62D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyPortfolio.DataAccess", "MyPortfolio.DataAccess\MyPortfolio.DataAccess.csproj", "{1B786EC6-CC5A-40E0-B739-5D122726A62D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyPortfolio.Entities", "MyPortfolio.Entities\MyPortfolio.Entities.csproj", "{7BB54559-8C80-4CE7-9ACA-F8AE33B076B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyPortfolio.Entities", "MyPortfolio.Entities\MyPortfolio.Entities.csproj", "{7BB54559-8C80-4CE7-9ACA-F8AE33B076B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyPortfolio.Core", "MyPortfolio.Core\MyPortfolio.Core.csproj", "{83B7E348-F822-4806-A615-0D4962C38E86}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyPortfolio.Core", "MyPortfolio.Core\MyPortfolio.Core.csproj", "{83B7E348-F822-4806-A615-0D4962C38E86}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
