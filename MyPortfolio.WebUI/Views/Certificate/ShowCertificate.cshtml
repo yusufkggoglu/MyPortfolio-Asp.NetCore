@@ -1,0 +1,32 @@
+﻿@model MyPortfolio.Entities.Concrete.Certificate
+@{
+    ViewData["Title"] = "ShowCertificate";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<div class="card card-primary">
+    <div class="card-header">
+        <h3 class="card-title">Sertifika Detay</h3>
+    </div>
+    <table class="table table-bordered">
+        <tr>
+            <th style="width: 30px">ID</th>
+            <td>@Model.CertificateID</td>
+        </tr>
+        <tr>
+            <th style="width: 30px">Sertifika Başlık</th>
+            <td>@Model.Title</td>
+        </tr>
+        <tr>
+            <th style="width: 30px">Alınan Yer</th>
+            <td>@Model.Brand</td>
+        </tr>
+        <tr>
+            <th style="width: 30px">Açıklama</th>
+            <td>@Model.Description</td>
+        </tr>
+        <tr>
+            <th style="width: 30px">Durum</th>
+            <td>@Model.Status</td>
+        </tr>
+    </table>
+</div>

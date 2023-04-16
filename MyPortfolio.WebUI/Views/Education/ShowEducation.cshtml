@@ -1,0 +1,30 @@
+﻿@model MyPortfolio.Entities.Concrete.Education
+
+@{
+    ViewData["Title"] = "ShowEducation";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="card card-primary">
+    <div class="card-header">
+        <h3 class="card-title">Eğitim Detay</h3>
+    </div>
+    <table class="table table-bordered">
+        <tr>
+            <th style="width: 30px">ID</th>
+            <td>@Model.EducationID</td>
+        </tr>
+        <tr>
+            <th style="width: 30px">Okul</th>
+            <td>@Model.School</td>
+        </tr>
+        <tr>
+            <th style="width: 30px">Bölüm</th>
+            <td>@Model.Department</td>
+        </tr>
+        <tr>
+            <th style="width: 30px">Açıklama</th>
+            <td>@Model.Description</td>
+        </tr>
+    </table>
+</div>

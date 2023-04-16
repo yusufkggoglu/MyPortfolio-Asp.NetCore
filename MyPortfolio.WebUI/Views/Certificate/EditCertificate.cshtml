@@ -1,0 +1,44 @@
+﻿@model MyPortfolio.Entities.Concrete.Certificate
+@{
+    ViewData["Title"] = "EditCertificate";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+
+}
+
+<div class="card card-primary">
+    <div class="card-header">
+        <h3 class="card-title">Sertifika Düzenleme Formu</h3>
+    </div>
+    @using (Html.BeginForm("EditCertificate", "Certificate", FormMethod.Post))
+    {
+        <div class="card-body">
+            @Html.HiddenFor(x => x.CertificateID)
+            <div class="form-group">
+                <label for="Sertifika Başlığı">Yetenek Başlık</label>
+                @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+            </div>
+            <div class="form-group">
+                <label for="Alınan Yer">Alınan Yer</label>
+                @Html.TextBoxFor(x => x.Brand, new { @class = "form-control" })
+            </div>
+            <div class="form-group">
+                <label for="Açıklama">Açıklama</label>
+                @Html.TextAreaFor(x => x.Description, new { @class = "form-control" })
+            </div>
+            <div class="form-group">
+                <label for="Durum">Durum</label>
+                @Html.DropDownListFor(x => x.Status, new SelectList(
+               new List<Object> {
+                   new { value = 1, text = "Hayır"},
+                   new { value = 0, text = "Evet" } },
+               "value","text",Model.Status))
+            </div>
+        </div>
+        <!-- /.card-body -->
+        <div class="card-footer">
+            <button class="btn btn-primary">Kaydet</button>
+        </div>
+    }
+</div>
+
+
